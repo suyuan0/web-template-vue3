@@ -10,5 +10,6 @@ declare module 'vue' {
         ElButton: (typeof import('element-plus/es'))['ElButton']
         ElCard: (typeof import('element-plus/es'))['ElCard']
         HelloWorld: (typeof import('./src/components/HelloWorld.vue'))['default']
+        SvgIcon: (typeof import('./src/components/SvgIcon/index.vue'))['default']
     }
 }
