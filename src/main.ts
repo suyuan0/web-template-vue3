@@ -5,5 +5,7 @@ import App from './App.vue'
 import 'virtual:svg-icons-register'
 // normalize.css
 import 'normalize.css'
+// element-plus css
+import 'element-plus/dist/index.css'
 
 createApp(App).mount('#app')

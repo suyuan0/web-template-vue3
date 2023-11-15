@@ -2,9 +2,9 @@
  * @description：请求配置
  */
 export enum ResultEnum {
-    SUCCESS = 200,
+    SUCCESS = 'SUCCESS',
     ERROR = 500,
-    OVERDUE = 401,
+    OVERDUE = 'TOKEN_FAIL',
     TIMEOUT = 30000,
     TYPE = 'success'
 }
