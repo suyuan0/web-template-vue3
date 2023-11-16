@@ -28,7 +28,9 @@
         "sass": "^1.69.5",
         "unplugin-vue-setup-extend-plus": "^1.0.0",
         "vite-plugin-compression": "^0.5.1",
+        "vite-plugin-eslint": "^1.8.1",
         "vite-plugin-html": "^3.2.0",
+        "vite-plugin-pwa": "^0.16.7",
         "vue": "^3.3.4"
     },
     "devDependencies": {
