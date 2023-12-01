@@ -7,5 +7,10 @@ import 'virtual:svg-icons-register'
 import 'normalize.css'
 // element-plus css
 import 'element-plus/dist/index.css'
+import router from './router'
+import './permission'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(router)
+app.mount('#app')
