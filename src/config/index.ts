@@ -17,3 +17,5 @@ export const AMAP_MAP_KEY: string = ''
 
 // 百度地图 key
 export const BAIDU_MAP_KEY: string = ''
+
+export const IMAGE_URL: string = import.meta.env.VITE_IMAGE_URL as string

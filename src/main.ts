@@ -14,6 +14,7 @@ import './permission'
 // store
 import pinia from './store'
 import './styles/index.scss'
+import './rem'
 
 const app = createApp(App)
 

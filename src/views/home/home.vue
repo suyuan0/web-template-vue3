@@ -1,3 +1,3 @@
 <template>
-    <div style="background: linen" @click="$router.push('/about')">vue3 home</div>
+    <div style="font-size: 100px" @click="$router.push('/about')">你在干什么</div>
 </template>
