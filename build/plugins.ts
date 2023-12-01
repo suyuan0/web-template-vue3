@@ -11,6 +11,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { VitePWA } from 'vite-plugin-pwa'
 import { visualizer } from 'rollup-plugin-visualizer'
+import vueDevtools from 'vite-plugin-vue-devtools'
 
 /**
  * 创建 vite 插件
@@ -43,6 +44,8 @@ export const createVitePlugins = (viteEnv: ViteEnv): (PluginOption | PluginOptio
             iconDirs: [resolve(process.cwd(), 'src/assets/icons')],
             symbolId: 'icon-[dir]-[name]'
         }),
+        // vueDevtools
+        vueDevtools(),
         // vitePWA
         VITE_PWA && createVitePwa(viteEnv),
         // 是否生成包预览，分析依赖包大小做优化处理
