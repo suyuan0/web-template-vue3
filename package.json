@@ -24,6 +24,7 @@
         "dayjs": "^1.11.10",
         "element-plus": "^2.4.2",
         "normalize.css": "^8.0.1",
+        "pinia": "^2.1.7",
         "rollup-plugin-visualizer": "^5.9.2",
         "sass": "^1.69.5",
         "unplugin-vue-setup-extend-plus": "^1.0.0",

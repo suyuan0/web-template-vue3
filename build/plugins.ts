@@ -27,6 +27,8 @@ export const createVitePlugins = (viteEnv: ViteEnv): (PluginOption | PluginOptio
         Components({
             resolvers: [ElementPlusResolver()]
         }),
+        // vueDevtools
+        vueDevtools(),
         // name 可以写在 script 标签上
         vueSetupExtend({}),
         // esLint 报错信息显示在浏览器界面上
@@ -44,8 +46,6 @@ export const createVitePlugins = (viteEnv: ViteEnv): (PluginOption | PluginOptio
             iconDirs: [resolve(process.cwd(), 'src/assets/icons')],
             symbolId: 'icon-[dir]-[name]'
         }),
-        // vueDevtools
-        vueDevtools(),
         // vitePWA
         VITE_PWA && createVitePwa(viteEnv),
         // 是否生成包预览，分析依赖包大小做优化处理
