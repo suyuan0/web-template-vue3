@@ -13,6 +13,7 @@ import router from './router'
 import './permission'
 // store
 import pinia from './store'
+import './styles/index.scss'
 
 const app = createApp(App)
 
