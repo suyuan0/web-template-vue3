@@ -3,7 +3,7 @@
  * @param key   键
  * @param value 值
  */
-export function setItem(key: string, value: any) {
+export function setItem<T = any>(key: string, value: T) {
     window.sessionStorage.setItem(key, JSON.stringify(value))
 }
 
@@ -15,7 +15,7 @@ export function setItem(key: string, value: any) {
 export function getItem<T>(key: string): T {
     const value = window.sessionStorage.getItem(key) as T
     try {
-        return JSON.parse(window.localStorage.getItem(key) as string)
+        return JSON.parse(window.sessionStorage.getItem(key) as string)
     } catch (error) {
         return value
     }

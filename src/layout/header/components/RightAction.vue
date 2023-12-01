@@ -1,12 +1,24 @@
 <template>
-    <div class="sft-header-action">
+    <div :class="['sft-header-action animate__animated', { animate__slideInRight: isStart }]">
         <div class="item">分析报告导出</div>
         <!-- TODO user info -->
         <div class="item">用户名</div>
     </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const isStart = ref(false)
+
+const openAnimation = () => {
+    isStart.value = true
+}
+
+defineExpose({
+    openAnimation
+})
+</script>
 
 <style scoped lang="scss">
 .sft-header-action {

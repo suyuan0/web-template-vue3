@@ -1,5 +1,5 @@
 <template>
-    <div class="sft-header-menu">
+    <div :class="['sft-header-menu animate__animated', { animate__slideInLeft: isStart }]">
         <span v-for="item in menuList" :key="item.id" :class="['item', { active: active === item.id }]" @click="handleChangeMenu(item)">
             {{ item.title }}
         </span>
@@ -8,6 +8,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+
+// 菜单列表
 const menuList = [
     {
         id: 1,
@@ -19,15 +21,27 @@ const menuList = [
     },
     {
         id: 3,
-        title: '隐患只能采集系统'
+        title: '隐患智能采集'
     }
 ]
 const active = ref(1)
 
+const isStart = ref(false)
+
+// 开启动画
+const openAnimation = () => {
+    isStart.value = true
+}
+
+// 切换菜单
 const handleChangeMenu = (item: any) => {
     if (item.id === active.value) return
     active.value = item.id
 }
+
+defineExpose({
+    openAnimation
+})
 </script>
 
 <style scoped lang="scss">

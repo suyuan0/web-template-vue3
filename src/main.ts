@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './style.css'
+import './style.scss'
 import App from './App.vue'
 // svg icons
 import 'virtual:svg-icons-register'
@@ -15,6 +15,7 @@ import './permission'
 import pinia from './store'
 import './styles/index.scss'
 import './rem'
+import 'animate.css'
 
 const app = createApp(App)
 

@@ -1,0 +1,13 @@
+.login-container {
+    position: relative;
+    .title {
+        position: absolute;
+        top: 7.625rem;
+        left: 50%;
+        width: 71.4375rem;
+        height: 5.3125rem;
+        background-image: url('#{$image-url}/pub/layout-title__text.png');
+        background-size: 100% 100%;
+        transform: translateX(-50%);
+    }
+}

@@ -8,5 +8,5 @@ const modules = import.meta.glob('@/views/**/*.vue')
  */
 export const initDynamicRouter = () => {
     // TODO 动态路由
-    console.log(modules, 'TODO 动态路由')
+    console.log(modules, 'TODO 动态路由，，，什么BUG')
 }
