@@ -1,12 +1,28 @@
 .sft-card-container {
-    width: 26.9375rem;
-    height: 19.9375rem;
+    // width: 26.9375rem;
+    // height: 19.9375rem;
+    width: 27.4375rem;
+    height: 20.6875rem;
     background-image: url('#{$image-url}/pub/card-bg.png');
     background-size: cover;
     background-size: 100%;
+    &.tensile {
+        width: 55.9375rem;
+
+        // width: 55.375rem;
+        height: 17.125rem;
+        background-image: url('#{$image-url}/pub/card-bg__tensile.png');
+        .sft-card-container__header {
+            height: 3.4375rem;
+        }
+        .sft-card-container__content {
+            padding: 0.75rem 1.875rem;
+        }
+    }
     .sft-card-container__header {
         box-sizing: border-box;
         display: flex;
+        align-items: center;
         justify-content: space-between;
         height: 3.125rem;
         padding: 0.9375rem 1.125rem;

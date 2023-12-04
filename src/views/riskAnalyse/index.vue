@@ -8,6 +8,8 @@
                     <!-- 行业分布 -->
                     <IndustryDistribution />
                 </SFTGrid>
+                <!-- 隐患原因分布 -->
+                <DistributionOfHiddenCauses />
             </template>
         </SFTLayout>
     </div>
@@ -20,4 +22,5 @@ import SFTGrid from '@/components/SFTGrid/index.vue'
 import DataOverview from '@/views/components/DataOverview/index.vue'
 // 行业分布
 import IndustryDistribution from '@/views/components/IndustryDistribution/index.vue'
+import DistributionOfHiddenCauses from '@/views/components/DistributionOfHiddenCauses/index.vue'
 </script>
