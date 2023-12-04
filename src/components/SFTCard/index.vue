@@ -3,6 +3,9 @@
         <!-- 头部 -->
         <div class="sft-card-container__header">
             <span class="title">{{ title }}</span>
+            <div class="slot-container">
+                <slot name="action"></slot>
+            </div>
         </div>
         <!-- 内容 -->
         <div class="sft-card-container__content">

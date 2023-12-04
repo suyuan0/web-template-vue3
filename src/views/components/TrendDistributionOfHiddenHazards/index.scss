@@ -1,0 +1,18 @@
+.trend-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.4375rem;
+    height: 2.25rem;
+    background-color: #081229;
+    background-image: url('#{$image-url}/pub/trend-action-bg.png');
+    background-size: 100% 100%;
+    .title {
+        font-size: 1rem;
+        color: $white;
+    }
+}
+.trend-distribution-of-hidden-hazards {
+    width: 100%;
+    height: 100%;
+}

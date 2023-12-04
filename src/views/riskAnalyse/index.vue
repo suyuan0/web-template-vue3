@@ -13,7 +13,10 @@
             </template>
             <template #right>
                 <SFTGrid>
+                    <!-- 专家统计  -->
                     <ExpertStatistic />
+                    <!-- 隐患趋势分布 -->
+                    <TrendDistributionOfHiddenHazards />
                 </SFTGrid>
             </template>
         </SFTLayout>
@@ -31,4 +34,6 @@ import IndustryDistribution from '@/views/components/IndustryDistribution/index.
 import DistributionOfHiddenCauses from '@/views/components/DistributionOfHiddenCauses/index.vue'
 // 专家统计
 import ExpertStatistic from '@/views/components/ExpertStatistic/index.vue'
+// 隐患趋势分布
+import TrendDistributionOfHiddenHazards from '@/views/components/TrendDistributionOfHiddenHazards/index.vue'
 </script>
