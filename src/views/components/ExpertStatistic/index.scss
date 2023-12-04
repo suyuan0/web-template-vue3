@@ -1,0 +1,33 @@
+.expert-statistic-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1rem;
+        .item {
+            box-sizing: border-box;
+            width: 50%;
+            .title {
+                box-sizing: border-box;
+                margin-right: 0.6875rem;
+            }
+            &:nth-of-type(1) {
+                margin-bottom: 0.3125rem;
+            }
+            &:nth-of-type(2n) {
+                padding-left: 0.625rem;
+                text-align: left;
+            }
+            &:nth-of-type(2n + 1) {
+                padding-right: 0.625rem;
+                text-align: right;
+            }
+        }
+    }
+    .chart-container {
+        flex: 1;
+        padding: 0.625rem;
+    }
+}
