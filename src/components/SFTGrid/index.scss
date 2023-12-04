@@ -1,0 +1,6 @@
+.sft-grid-container {
+    // 两列显示
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}

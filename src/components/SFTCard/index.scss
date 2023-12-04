@@ -1,0 +1,22 @@
+.sft-card-container {
+    width: 26.9375rem;
+    height: 19.9375rem;
+    background-image: url('#{$image-url}/pub/card-bg.png');
+    background-size: cover;
+    background-size: 100%;
+    .sft-card-container__header {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        height: 3.125rem;
+        padding: 0.9375rem 1.125rem;
+        .title {
+            font-size: 1rem;
+        }
+    }
+    .sft-card-container__content {
+        box-sizing: border-box;
+        height: calc(100% - 3.125rem);
+        padding: 0.625rem 1.125rem;
+    }
+}

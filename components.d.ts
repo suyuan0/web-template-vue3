@@ -17,6 +17,9 @@ declare module 'vue' {
         HelloWorld: (typeof import('./src/components/HelloWorld.vue'))['default']
         RouterLink: (typeof import('vue-router'))['RouterLink']
         RouterView: (typeof import('vue-router'))['RouterView']
+        SFTCard: (typeof import('./src/components/SFTCard/index.vue'))['default']
+        SFTGrid: (typeof import('./src/components/SFTGrid/index.vue'))['default']
+        SFTLayout: (typeof import('./src/components/SFTLayout/index.vue'))['default']
         SvgIcon: (typeof import('./src/components/SvgIcon/index.vue'))['default']
     }
 }

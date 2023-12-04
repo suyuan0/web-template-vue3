@@ -1,0 +1,59 @@
+.date-overview-container {
+    .base-info,
+    .risk-info {
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            &::before {
+                width: 0.25rem;
+                height: 0.9375rem;
+                margin-right: 0.625rem;
+                content: '';
+                background-color: #1350cf;
+            }
+        }
+    }
+    .base-info {
+        display: flex;
+        justify-content: space-around;
+        height: 3.4375rem;
+        margin-bottom: 0.5625rem;
+        background-image: url('#{$image-url}/pub/data-overview-bg.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100% 1.9375rem;
+        .base-info__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title {
+                margin-bottom: 0.75rem;
+            }
+            .value {
+                font-size: 1.125rem;
+            }
+        }
+    }
+    .risk-info {
+        column-count: 3;
+        .risk-info__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .title {
+                width: 100%;
+                margin-bottom: 0.125rem;
+            }
+            .value {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 7.5rem;
+                height: 2.4375rem;
+                background-image: url('#{$image-url}/pub/data-overview-bg__risk.png');
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
