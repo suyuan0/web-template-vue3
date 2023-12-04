@@ -14,6 +14,8 @@
 // import { LOGIN_ANIMATE } from '@/utils/constant'
 // import { setItem } from '@/utils'
 import LoginForm from './components/loginForm.vue'
+import autofit from 'autofit.js'
+import { onMounted } from 'vue'
 
 // const router = useRouter()
 
@@ -22,6 +24,13 @@ import LoginForm from './components/loginForm.vue'
 
 //     router.push('/riskAnalyse')
 // }
+onMounted(() => {
+    autofit.init({
+        dw: 1920,
+        dh: 1080,
+        el: '.login-container'
+    })
+})
 </script>
 
 <style scoped lang="scss">

@@ -100,8 +100,8 @@ onMounted(() => {
     top: 50%;
     left: 50%;
     z-index: 99;
-    width: 26.125rem;
-    height: 18.5625rem;
+    width: 418px;
+    height: 297px;
     transform: translate(-50%, -50%);
     .lofin-form__item {
         box-sizing: border-box;
@@ -109,13 +109,13 @@ onMounted(() => {
         align-items: center;
         justify-content: center;
         width: inherit;
-        height: 3.5rem;
-        padding-right: 1.25rem;
-        margin-bottom: 2.5625rem;
+        height: 56px;
+        padding-right: 20px;
+        margin-bottom: 41px;
         background-image: url('#{$image-url}/login/input-bg.png');
         background-size: 100% 100%;
         &:nth-of-type(2) {
-            margin-bottom: 2.0625rem;
+            margin-bottom: 33px;
         }
         .lofin-form__item--inner {
             box-sizing: border-box;
@@ -123,18 +123,18 @@ onMounted(() => {
             height: inherit;
             padding: 20px;
             color: $white;
-            letter-spacing: 0.3125rem;
+            letter-spacing: 5px;
             background: none;
             border: none;
             outline: none;
             &::placeholder {
-                font-size: 1rem;
+                font-size: 16px;
                 color: $white;
             }
         }
         .icon {
-            width: 1.125rem;
-            height: 1.25rem;
+            width: 18px;
+            height: 20px;
             background-size: 100%;
             &.phone {
                 background-image: url('#{$image-url}/login/user.png');
@@ -145,34 +145,34 @@ onMounted(() => {
         }
     }
     .form-item {
-        margin-bottom: 0.9375rem;
+        margin-bottom: 15px;
         ::v-deep(.el-checkbox) {
             .el-checkbox__inner {
                 background-color: transparent;
                 border: 1px solid #1350cf;
             }
             .el-checkbox__label {
-                font-size: 1rem;
+                font-size: 16px;
                 color: $white;
             }
         }
     }
     .login-btn {
-        height: 2.9375rem;
-        margin-bottom: 0.5625rem;
+        height: 47px;
+        margin-bottom: 9px;
         button {
             width: 100%;
             height: 100%;
-            font-size: 1.25rem;
+            font-size: 20px;
             color: $white;
-            letter-spacing: 1.25rem;
+            letter-spacing: 20px;
             cursor: pointer;
             background-color: #1250cf;
             border: none;
         }
     }
     .tips {
-        font-size: 0.75rem;
+        font-size: 12px;
         color: $white;
     }
 }
