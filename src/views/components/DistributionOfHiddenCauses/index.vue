@@ -162,8 +162,8 @@ const resizeChart = () => {
 
 onMounted(() => {
     initChart()
-    renderChart()
     resizeChart()
+    renderChart()
     window.addEventListener('resize', resizeChart)
 })
 

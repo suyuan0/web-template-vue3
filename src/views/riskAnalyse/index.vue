@@ -18,6 +18,8 @@
                     <!-- 隐患趋势分布 -->
                     <TrendDistributionOfHiddenHazards />
                 </SFTGrid>
+                <!-- 地域隐患/企业率 -->
+                <GeographicallyHiddenEnterpriseRate />
             </template>
         </SFTLayout>
     </div>
@@ -36,4 +38,6 @@ import DistributionOfHiddenCauses from '@/views/components/DistributionOfHiddenC
 import ExpertStatistic from '@/views/components/ExpertStatistic/index.vue'
 // 隐患趋势分布
 import TrendDistributionOfHiddenHazards from '@/views/components/TrendDistributionOfHiddenHazards/index.vue'
+// 地域隐患/企业率
+import GeographicallyHiddenEnterpriseRate from '@/views/components/GeographicallyHiddenEnterpriseRate/index.vue'
 </script>
