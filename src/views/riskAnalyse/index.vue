@@ -11,6 +11,9 @@
                 <!-- 隐患原因分布 -->
                 <DistributionOfHiddenCauses />
             </template>
+            <template #center>
+                <ChartMap />
+            </template>
             <template #right>
                 <SFTGrid>
                     <!-- 专家统计  -->
@@ -40,4 +43,6 @@ import ExpertStatistic from '@/views/components/ExpertStatistic/index.vue'
 import TrendDistributionOfHiddenHazards from '@/views/components/TrendDistributionOfHiddenHazards/index.vue'
 // 地域隐患/企业率
 import GeographicallyHiddenEnterpriseRate from '@/views/components/GeographicallyHiddenEnterpriseRate/index.vue'
+// 地图
+import ChartMap from '@/views/components/ChartMap/index.vue'
 </script>
