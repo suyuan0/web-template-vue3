@@ -39,7 +39,7 @@ const changeHistory = (item: IndustryItem) => {
 .map-action-menu-container {
     position: absolute;
     right: 0;
-    bottom: 2rem;
+    bottom: 3.875rem;
     z-index: 100;
     display: flex;
     flex-direction: column;

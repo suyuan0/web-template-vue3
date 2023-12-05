@@ -1,8 +1,10 @@
 <template>
     <SFTCard title="隐患趋势分布">
         <template #action>
-            <div class="trend-action">
-                <span class="title">隐患总数</span>
+            <div class="trend-action-container">
+                <div class="trend-action item" v-for="item in actionList" :key="item.id">
+                    <span :class="['title', { active: active === item.id }]">{{ item.title }}</span>
+                </div>
             </div>
         </template>
         <!-- 图表容器 -->
@@ -15,6 +17,23 @@ import SFTCard from '@/components/SFTCard/index.vue'
 import { ref, onMounted, shallowRef, onBeforeUnmount } from 'vue'
 import * as echarts from 'echarts'
 import { trendList } from './data'
+
+const active = ref(1)
+
+const actionList = [
+    {
+        id: 1,
+        title: '隐患总数'
+    },
+    {
+        id: 2,
+        title: '重大隐患数'
+    },
+    {
+        id: 3,
+        title: '一般隐患数'
+    }
+]
 
 const fontSize = ref(0)
 // 图表容器

@@ -8,7 +8,10 @@
         <IndustryList />
         <!--  -->
         <MapActionMenu />
-        <div class="map-name">青岛市</div>
+        <div class="map-name">
+            <span>青岛市</span>
+            <span class="map-name__icon"></span>
+        </div>
     </div>
 </template>
 

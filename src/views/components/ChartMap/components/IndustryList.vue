@@ -74,7 +74,7 @@ const changeHistory = (item: IndustryItem) => {
     left: 0;
     z-index: 100;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     .item {
         box-sizing: border-box;
