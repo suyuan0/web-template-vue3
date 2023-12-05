@@ -1,0 +1,14 @@
+// 行业分析
+#industry-analyse-container {
+    // 数据概览
+    .sft-card__data-overview-container {
+        width: 34.25rem;
+        background-image: url('#{$image-url}/pub/card-bg__border.png');
+    }
+
+    // 隐患归属分类
+    .sft-card-classification-of-hidden-trouble-attribution {
+        width: 19.5625rem;
+        background-image: url('#{$image-url}/pub/card-bg__small.png');
+    }
+}

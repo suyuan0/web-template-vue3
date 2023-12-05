@@ -1,4 +1,5 @@
 <template>
+    <!-- 隐患原因分布 -->
     <SFTCard tensile title="隐患原因分布">
         <div class="distribution-of-hidden-causes-container">
             <div class="distribution-of-hidden-causes" ref="chartLeftRef"></div>

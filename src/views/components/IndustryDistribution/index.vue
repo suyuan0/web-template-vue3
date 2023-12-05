@@ -1,4 +1,5 @@
 <template>
+    <!-- 行业分布 -->
     <SFTCard title="行业分布">
         <div class="industry-distribution-container">
             <!-- 图表 -->

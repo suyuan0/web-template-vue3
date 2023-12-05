@@ -69,3 +69,23 @@ export const riskList = [
         value: 600985
     }
 ]
+
+export const riskList2 = [
+    ...riskList,
+    {
+        id: 10,
+        title: '隐患整改率',
+        value: 100,
+        unit: '%'
+    },
+    {
+        id: 11,
+        title: '执法覆盖率',
+        value: 600985
+    },
+    {
+        id: 12,
+        title: '执法覆盖率',
+        value: 600985
+    }
+]

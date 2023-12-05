@@ -1,4 +1,5 @@
 <template>
+    <!-- 地域隐患/企业率 -->
     <SFTCard tensile title="地域隐患/企业率">
         <div class="geographically-hidden-enterprise-rate" ref="chartRef"></div>
     </SFTCard>

@@ -1,4 +1,5 @@
 <template>
+    <!-- 隐患趋势分布 -->
     <SFTCard title="隐患趋势分布">
         <template #action>
             <div class="trend-action-container">

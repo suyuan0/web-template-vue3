@@ -4,6 +4,7 @@
     width: 27.4375rem;
     height: 20.6875rem;
     background-image: url('#{$image-url}/pub/card-bg.png');
+    background-repeat: no-repeat;
     background-size: 100%;
     &.tensile {
         width: 55.9375rem;
