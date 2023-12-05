@@ -47,6 +47,7 @@ const changeHistory = (item: HistoryItem) => {
         justify-content: center;
         width: 7.5rem;
         height: 2.8125rem;
+        color: $white;
         cursor: pointer;
         background-image: url('#{$image-url}/pub/history-btn.png');
         background-size: 100% 100%;

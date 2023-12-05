@@ -1,1 +1,29 @@
 @import './transition.css';
+
+@media screen and (width <= 1920px) {
+    // .sft-grid-container {
+    //     display: block !important;
+    // }
+    // .sft-layout-container {
+    //     height: 100% !important;
+    // }
+
+    // .chart-map-container {
+    //     height: 100%;
+    // }
+
+    // .sft-card-container {
+    //     background-image: url('#{$image-url}/pub/card-bg__tensile.png') !important;
+
+    // width: 55.9375rem !important;
+
+    // // width: 55.375rem;
+    // height: auto !important;
+    // .sft-card-container__header {
+    //     height: 3.4375rem !important;
+    // }
+    // .sft-card-container__content {
+    //     padding: 0.75rem 1.875rem !important;
+    // }
+    // }
+}

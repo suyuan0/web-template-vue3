@@ -1,5 +1,5 @@
 <template>
-    <div style="color: #ffffff">
+    <div style="height: 100%">
         <SFTLayout>
             <template #left>
                 <SFTGrid>

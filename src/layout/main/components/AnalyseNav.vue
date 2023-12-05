@@ -35,6 +35,7 @@ const handleToPath = (item: any) => {
     height: 3.625rem;
     padding: 0 3.125rem;
     background-image: url('#{$image-url}/pub/nav-bg.png');
+    background-size: 100% 100%;
     transform: translateX(-50%);
     .nav-list {
         display: flex;
