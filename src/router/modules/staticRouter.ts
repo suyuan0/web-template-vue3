@@ -35,11 +35,47 @@ export const staticRouter: RouteRecordRaw[] = [
             },
             // 隐患总览
             {
-                path: '/riskAnalyse',
+                path: '/risk-analyse',
                 name: 'riskAnalyse',
                 component: () => import('@/views/riskAnalyse/index.vue'),
                 meta: {
                     title: '隐患总览'
+                }
+            },
+            // 行业分析
+            {
+                path: '/industry-analysis',
+                name: 'industryAnalysis',
+                component: () => import('@/views/industryAnalysis/index.vue'),
+                meta: {
+                    title: '行业分析'
+                }
+            },
+            // 地域分析
+            {
+                path: '/regional-analysis',
+                name: 'regionalAnalysis',
+                component: () => import('@/views/regionalAnalysis/index.vue'),
+                meta: {
+                    title: '地域分析'
+                }
+            },
+            // 执法分析
+            {
+                path: '/law-enforcement-analysis',
+                name: 'lawEnforcementAnalysis',
+                component: () => import('@/views/lawEnforcementAnalysis/index.vue'),
+                meta: {
+                    title: '执法分析'
+                }
+            },
+            // 专家分析
+            {
+                path: '/expert-analysis',
+                name: 'expertAnalysis',
+                component: () => import('@/views/expertAnalysis/index.vue'),
+                meta: {
+                    title: '专家分析'
                 }
             }
         ]
