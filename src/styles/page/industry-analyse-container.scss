@@ -3,6 +3,7 @@
     // 数据概览
     .sft-card__data-overview-container {
         width: 34.25rem;
+        margin-bottom: 1.25rem;
         background-image: url('#{$image-url}/pub/card-bg__border.png');
     }
 
@@ -10,5 +11,18 @@
     .sft-card-classification-of-hidden-trouble-attribution {
         width: 19.5625rem;
         background-image: url('#{$image-url}/pub/card-bg__small.png');
+    }
+
+    // 隐患类别分布
+    .sft-card-distribution-of-hidden-trouble-categories {
+        width: 55.125rem;
+        height: 16.25rem;
+        margin-bottom: 1.25rem;
+    }
+
+    // 重大隐患清单
+    .sft-card-listof-major-hazards {
+        width: 55.125rem;
+        height: 16.25rem;
     }
 }

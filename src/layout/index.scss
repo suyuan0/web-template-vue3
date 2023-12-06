@@ -5,6 +5,8 @@
     // background-size: cover;
     .main {
         position: relative;
-        height: calc(100vh - 8.9337rem);
+        box-sizing: border-box;
+        height: calc(100% - 8.9337rem);
+        padding-bottom: 1.25rem;
     }
 }

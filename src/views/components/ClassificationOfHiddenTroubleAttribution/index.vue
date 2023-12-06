@@ -54,7 +54,11 @@ const renderChart = () => {
 const initChart = () => {
     chartInstance.value = echarts.init(chartRef.value as HTMLElement)
     const option = {
-        tooltip: {},
+        tooltip: {
+            formatter: (params: any) => {
+                return `${params.marker}${params.name} <br />${params.value}<br/>${params.percent}%`
+            }
+        },
         series: [
             {
                 type: 'pie',
@@ -95,7 +99,6 @@ const initChart = () => {
 // 重置图表大小
 const resizeChart = () => {
     fontSize.value = (chartRef.value!.offsetWidth / 100) * 3.6
-    console.log(fontSize.value)
     const option = {
         series: [
             {

@@ -1,0 +1,73 @@
+.distribution-of-hidden-trouble-categories-container {
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    .circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10.9375rem;
+        height: 10.9375rem;
+        font-size: 1.25rem;
+        color: $white;
+        background-image: url('#{$image-url}/pub/categories-circle.png');
+        background-size: 100% 100%;
+        border-radius: 50%;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: $white;
+        .item {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 14.8125rem;
+            height: 1.875rem;
+            padding: 0 1.5625rem;
+            margin: 0;
+            background-size: 100% 100%;
+            .title {
+                width: 7.5rem;
+
+                // 文字溢出隐藏
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+        &.left-list {
+            .item {
+                background-image: url('#{$image-url}/pub/categories-bg__left.png');
+                &:nth-of-type(1) {
+                    transform: translateX(30px);
+                }
+                &:nth-of-type(3) {
+                    transform: translateX(-30px);
+                }
+                &:nth-of-type(5) {
+                    transform: translateX(30px);
+                }
+            }
+        }
+        &.right-list {
+            .item {
+                background-image: url('#{$image-url}/pub/categories-bg__right.png');
+                .title {
+                    text-align: right;
+                }
+                &:nth-of-type(1) {
+                    transform: translateX(-30px);
+                }
+                &:nth-of-type(3) {
+                    transform: translateX(30px);
+                }
+                &:nth-of-type(5) {
+                    transform: translateX(-30px);
+                }
+            }
+        }
+    }
+}

@@ -13,8 +13,10 @@
                     <!-- 隐患归属分类 -->
                     <ClassificationOfHiddenTroubleAttribution />
                 </SFTGrid>
-                <!-- 隐患原因分布 -->
-                <DistributionOfHiddenCauses />
+                <!-- 隐患类别分布 -->
+                <DistributionOfHiddenTroubleCategories />
+                <!-- 重大隐患清单 -->
+                <ListofMajorHazards />
             </template>
             <template #center>
                 <ChartMap />
@@ -38,8 +40,12 @@ import SFTLayout from '@/components/SFTLayout/index.vue'
 import SFTGrid from '@/components/SFTGrid/index.vue'
 // 数据概览
 import DataOverview from '@/views/components/DataOverview/index.vue'
-// 隐患原因分布
-import DistributionOfHiddenCauses from '@/views/components/DistributionOfHiddenCauses/index.vue'
+// 隐患归属分类
+import ClassificationOfHiddenTroubleAttribution from '@/views/components/ClassificationOfHiddenTroubleAttribution/index.vue'
+// 隐患类别分布
+import DistributionOfHiddenTroubleCategories from '@/views/components/DistributionOfHiddenTroubleCategories/index.vue'
+// 重大隐患清单
+import ListofMajorHazards from '@/views/components/ListofMajorHazards/index.vue'
 // 专家统计
 import ExpertStatistic from '@/views/components/ExpertStatistic/index.vue'
 // 隐患趋势分布
@@ -48,8 +54,6 @@ import TrendDistributionOfHiddenHazards from '@/views/components/TrendDistributi
 import GeographicallyHiddenEnterpriseRate from '@/views/components/GeographicallyHiddenEnterpriseRate/index.vue'
 // 地图
 import ChartMap from '@/views/components/ChartMap/index.vue'
-// 隐患归属分类
-import ClassificationOfHiddenTroubleAttribution from '@/views/components/ClassificationOfHiddenTroubleAttribution/index.vue'
 </script>
 
 <style scoped lang="scss">

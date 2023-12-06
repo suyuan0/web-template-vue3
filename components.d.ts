@@ -19,6 +19,8 @@ declare module 'vue' {
         ElIcon: (typeof import('element-plus/es'))['ElIcon']
         ElInput: (typeof import('element-plus/es'))['ElInput']
         ElRow: (typeof import('element-plus/es'))['ElRow']
+        ElScrollbar: (typeof import('element-plus/es'))['ElScrollbar']
+        ElTable: (typeof import('element-plus/es'))['ElTable']
         HeaderTitle: (typeof import('./src/components/HeaderTitle/index.vue'))['default']
         HelloWorld: (typeof import('./src/components/HelloWorld.vue'))['default']
         RouterLink: (typeof import('vue-router'))['RouterLink']
@@ -26,6 +28,7 @@ declare module 'vue' {
         SFTCard: (typeof import('./src/components/SFTCard/index.vue'))['default']
         SFTGrid: (typeof import('./src/components/SFTGrid/index.vue'))['default']
         SFTLayout: (typeof import('./src/components/SFTLayout/index.vue'))['default']
+        SFTTable: (typeof import('./src/components/SFTTable/index.vue'))['default']
         SvgIcon: (typeof import('./src/components/SvgIcon/index.vue'))['default']
     }
 }

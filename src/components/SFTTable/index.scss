@@ -1,0 +1,56 @@
+$table-main-color: #296efd;
+$white-index: 4.0625rem;
+.sft-table-container {
+    height: 100%;
+
+    // 表格
+    .table-main {
+        width: 100%;
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+        text-align: left;
+        border-collapse: collapse;
+        th,
+        td {
+            padding: 0; /* Remove padding for table cells */
+        }
+        .table-main__header,
+        .table-main__body {
+            tr {
+                height: 1.875rem;
+                td,
+                th {
+                    box-sizing: border-box;
+                    padding: 0 0.625rem;
+                    border-left: 0.0313rem solid #ffffff;
+                }
+            }
+        }
+
+        // 表头
+        .table-main__header {
+            // 表头行
+            .table-main__header-tr {
+                // 表头行项
+                .table-main__header-tr__item {
+                    font-size: 1.125rem;
+                    color: $table-main-color;
+                }
+            }
+        }
+
+        // 表体
+        .table-main__body {
+            .table-main__body-tr {
+                .table-main__body-tr__item {
+                    color: $white;
+                }
+            }
+        }
+        .table-main__header-tr__item.index,
+        .table-main__body-tr__item.index {
+            width: $white-index;
+            font-size: 1rem;
+        }
+    }
+}
