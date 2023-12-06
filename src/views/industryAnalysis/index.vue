@@ -19,7 +19,11 @@
                 <ListofMajorHazards />
             </template>
             <template #center>
-                <ChartMap />
+                <div class="sft-layout-industry-analyse-center">
+                    <ChartMap />
+                    <!-- 企业隐患数量统计 -->
+                    <StatisticsOnTheNumberOfHiddenDangersInEnterprises />
+                </div>
             </template>
             <template #right>
                 <SFTGrid>
@@ -54,6 +58,8 @@ import TrendDistributionOfHiddenHazards from '@/views/components/TrendDistributi
 import GeographicallyHiddenEnterpriseRate from '@/views/components/GeographicallyHiddenEnterpriseRate/index.vue'
 // 地图
 import ChartMap from '@/views/components/ChartMap/index.vue'
+// 企业隐患数量统计
+import StatisticsOnTheNumberOfHiddenDangersInEnterprises from '@/views/components/StatisticsOnTheNumberOfHiddenDangersInEnterprises/index.vue'
 </script>
 
 <style scoped lang="scss">

@@ -26,10 +26,12 @@
                         </td>
                         <!-- 列 -->
                         <td class="table-main__body-tr__item value" v-for="(columnItem, columnIndex) in columns" :key="columnIndex">
-                            {{ item[columnItem.prop as keyof typeof item] }}
+                            <el-tooltip placement="top" :content="item[columnItem.prop as keyof typeof item]">
+                                {{ item[columnItem.prop as keyof typeof item] }}
+                            </el-tooltip>
                         </td>
                         <td v-if="action" class="table-main__body-tr__item">
-                            <slot name="action"></slot>
+                            <slot name="action" :index="index" :row="item"></slot>
                         </td>
                     </tr>
                 </tbody>
