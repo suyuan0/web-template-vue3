@@ -51,4 +51,11 @@
         height: 20rem;
         background-image: $card-bg-small;
     }
+
+    // 隐患/企业比率（涉重大危险源）
+    .sft-card-ratio-of-enterprises-with-hidden-problems {
+        width: 34.375rem;
+        height: 20rem;
+        background-image: $card-bg-large;
+    }
 }

@@ -30,6 +30,7 @@
                     <!-- 隐患高频分布 -->
                     <HiddenHazardsHighFrequencyDistribution />
                     <!-- 隐患/企业比率（涉重大危险源） -->
+                    <RatioOfEnterprisesWithHiddenProblems />
                 </SFTGrid>
                 <SFTGrid>
                     <!-- 隐患领域分布 -->
@@ -61,6 +62,8 @@ import ChartMap from '@/views/components/ChartMap/index.vue'
 import StatisticsOnTheNumberOfHiddenDangersInEnterprises from '@/views/components/StatisticsOnTheNumberOfHiddenDangersInEnterprises/index.vue'
 // 隐患高频分布
 import HiddenHazardsHighFrequencyDistribution from '@/views/components/HiddenHazardsHighFrequencyDistribution/index.vue'
+// 隐患/企业比率（涉重大危险源）
+import RatioOfEnterprisesWithHiddenProblems from '@/views/components/RatioOfEnterprisesWithHiddenProblems/index.vue'
 </script>
 
 <style scoped lang="scss">
