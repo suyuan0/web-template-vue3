@@ -1,3 +1,9 @@
 // 图片 CDN 地址
 $image-url: 'http://192.168.1.15:5173';
 $white: #ffffff;
+
+// card背景
+$card-bg-small: url('#{$image-url}/pub/card-bg__small.png');
+$card-bg-border: url('#{$image-url}/pub/card-bg__border.png');
+$card-bg-border-tensile: url('#{$image-url}/pub/card-bg__border__tensile.png');
+$card-bg-border-large: url('#{$image-url}/pub/card-bg__border__large.png');

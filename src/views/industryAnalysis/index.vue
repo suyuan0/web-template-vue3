@@ -27,13 +27,18 @@
             </template>
             <template #right>
                 <SFTGrid>
-                    <!-- 专家统计  -->
-                    <ExpertStatistic />
-                    <!-- 隐患趋势分布 -->
-                    <TrendDistributionOfHiddenHazards />
+                    <!-- 隐患高频分布 -->
+                    <HiddenHazardsHighFrequencyDistribution />
+                    <!-- 隐患/企业比率（涉重大危险源） -->
                 </SFTGrid>
-                <!-- 地域隐患/企业率 -->
-                <GeographicallyHiddenEnterpriseRate />
+                <SFTGrid>
+                    <!-- 隐患领域分布 -->
+                    <!-- 隐患原因分布 -->
+                </SFTGrid>
+                <SFTGrid>
+                    <!-- 重大危险源企业分析 -->
+                    <!-- 隐患趋势分布 -->
+                </SFTGrid>
             </template>
         </SFTLayout>
     </div>
@@ -50,16 +55,12 @@ import ClassificationOfHiddenTroubleAttribution from '@/views/components/Classif
 import DistributionOfHiddenTroubleCategories from '@/views/components/DistributionOfHiddenTroubleCategories/index.vue'
 // 重大隐患清单
 import ListofMajorHazards from '@/views/components/ListofMajorHazards/index.vue'
-// 专家统计
-import ExpertStatistic from '@/views/components/ExpertStatistic/index.vue'
-// 隐患趋势分布
-import TrendDistributionOfHiddenHazards from '@/views/components/TrendDistributionOfHiddenHazards/index.vue'
-// 地域隐患/企业率
-import GeographicallyHiddenEnterpriseRate from '@/views/components/GeographicallyHiddenEnterpriseRate/index.vue'
 // 地图
 import ChartMap from '@/views/components/ChartMap/index.vue'
 // 企业隐患数量统计
 import StatisticsOnTheNumberOfHiddenDangersInEnterprises from '@/views/components/StatisticsOnTheNumberOfHiddenDangersInEnterprises/index.vue'
+// 隐患高频分布
+import HiddenHazardsHighFrequencyDistribution from '@/views/components/HiddenHazardsHighFrequencyDistribution/index.vue'
 </script>
 
 <style scoped lang="scss">

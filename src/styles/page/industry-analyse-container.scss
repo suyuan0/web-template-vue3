@@ -4,13 +4,13 @@
     .sft-card__data-overview-container {
         width: 34.25rem;
         margin-bottom: 1.25rem;
-        background-image: url('#{$image-url}/pub/card-bg__border.png');
+        background-image: $card-bg-border;
     }
 
     // 隐患归属分类
     .sft-card-classification-of-hidden-trouble-attribution {
         width: 19.5625rem;
-        background-image: url('#{$image-url}/pub/card-bg__small.png');
+        background-image: $card-bg-small;
     }
 
     // 隐患类别分布
@@ -24,20 +24,31 @@
     .sft-card-listof-major-hazards {
         width: 55.125rem;
         height: 16.25rem;
-        background-image: url('#{$image-url}/pub/card-bg__border__tensile.png');
+        background-image: $card-bg-border-tensile;
     }
     .sft-layout-industry-analyse-center {
         display: flex;
         flex-direction: column;
         height: 100%;
+
+        // 地图
         .chart-map-container {
             flex: 1;
             margin-bottom: 1.25rem;
         }
     }
+
+    // 企业隐患数量统计
     .sft-card-statistics-on-the-number-of-hidden-dangers-in-enterprises {
         width: 100%;
         height: 16.25rem;
-        background-image: url('#{$image-url}/pub/card-bg__border__large.png');
+        background-image: $card-bg-border-large;
+    }
+
+    // 隐患高频分布
+    .sft-card-hidden-hazards-high-frequency-distribution {
+        width: 19.6875rem;
+        height: 20rem;
+        background-image: $card-bg-small;
     }
 }

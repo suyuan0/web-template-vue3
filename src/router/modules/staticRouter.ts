@@ -24,7 +24,7 @@ export const staticRouter: RouteRecordRaw[] = [
         component: Layout,
         children: [
             {
-                path: HOME_URL,
+                path: '/home',
                 name: 'home',
                 component: () => import('@/views/home/home.vue')
             },
@@ -35,7 +35,7 @@ export const staticRouter: RouteRecordRaw[] = [
             },
             // 隐患总览
             {
-                path: '/risk-analyse',
+                path: HOME_URL,
                 name: 'riskAnalyse',
                 component: () => import('@/views/riskAnalyse/index.vue'),
                 meta: {
@@ -79,5 +79,18 @@ export const staticRouter: RouteRecordRaw[] = [
                 }
             }
         ]
+    },
+    // 404
+    {
+        path: '/404',
+        name: 'not-found',
+        component: () => import('@/views/errPage/404.vue'),
+        meta: {
+            title: 'notFound'
+        }
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        redirect: '/404'
     }
 ]
